@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    color: white;
+    z-index: 2;
+}
+header h1{
+    font-size: 20px;
+    color: white;
+    font-family: "Major Mono Display", serif;
+    transition: 0.6s all ease-in-out;
+    padding: 10px 20px 10px 20px;
+}
+header h1:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 22px;
+
+}
+.droite {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Major Mono Display", serif;
+
+}
+.droite a{
+    font-size: 7rem;
+    color: white;
+    font-family: "Major Mono Display", serif;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.droite span a{
+    background-color: white;
+    color: black;
+    font-size: 8.5em;
+    width: 100%;
+}
+.droite span a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.droite a:hover{
+    background-color: white;
+    color: black;
+
+}
+.titre{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.cli{
+    animation-duration: 5s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+
+@keyframes clignoter {
+    0%   {
+        opacity:1;
+    }
+    40%   {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+}
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}

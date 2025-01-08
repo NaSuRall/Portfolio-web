@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+}
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    color: white;
+    z-index: 2;
+}
+header a{
+    font-size: 20px;
+    color: #000000;
+    font-family: "Major Mono Display", serif;
+    transition: 0.6s all ease-in-out;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+header a:hover{
+    font-size: 25px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.titre-haut{
+    font-size: 1.5em;
+    font-family: "Major Mono Display", serif;
+    color: white;
+    padding: 20px;
+    width: 97%;
+    border-bottom: 2px solid white;
+    margin: 30px;
+}
+
+.groupe{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    width: 100%;
+}
+.groupe .bloc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    transition: .5s all ease-in-out;
+
+}
+.bloc:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.bloc .img img{
+    width: 100%;
+    height: 200px;
+    
+}
+.bloc h2{
+    margin-top: 10px;
+    font-family: "Major Mono Display", serif;
+    font-size: 1.5em;
+}
+.bloc p{
+    font-size: 1em;
+    margin-top: 20px;
+    font-family: "Arvo", serif;
+}
+
+
+/* __________________________________________________________________*/
+
+
+.ide-header {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 0.5rem;
+    width: 70%;
+}
+.ide-title{
+    color: white;
+}
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.circle.red {
+    background-color: #ff5f57;
+}
+
+.circle.yellow {
+    background-color: #ffbd2e;
+}
+
+.circle.green {
+    background-color: #28c840;
+}
+.ide-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    padding: 50px;
+    flex-direction: column;
+    border-radius: 50px;
+}
+.code-area{
+    margin-top: -14px;
+    padding: 0;
+}
+.code-wrapper{
+    width: 70%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+.language-html{
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    
+}
+.hljs{
+    background-color: #1e1e1e;
+}
+pre{
+    width: 100%;
+    height: 100%;
+}
