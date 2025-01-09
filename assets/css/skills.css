@@ -75,7 +75,7 @@ header a:hover{
     background-color: white;
     border-radius: 10px;
     margin: 10px;
-    width: 300px;
+    width: 30%;
     height: 300px;
     transition: .5s all ease-in-out;
 
@@ -170,4 +170,36 @@ header a:hover{
 .cv-download-btn:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 1024px) {
+
+
+       .groupe{
+        flex-direction: column;
+        width: 100%;
+    }
+    .groupe .bloc{
+        width: 100%;
+    }
+   .row{
+    flex-direction: column;
+   }
+   
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .groupe{
+        flex-direction: column;
+        width: 100%;
+    }
+    .groupe .bloc{
+        width: 80%;
+    }
+   .row{
+    flex-direction: column;
+   }
+   
 }

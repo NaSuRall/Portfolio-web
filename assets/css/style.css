@@ -83,6 +83,7 @@ header h1:hover{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    z-index: 5;
 }
 
 .cli{
@@ -109,4 +110,54 @@ header h1:hover{
 :root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
+}
+
+@media (max-width: 1024px) {
+    .droite {
+        width: 100%;
+        position: static;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .droite a {
+        font-size: 3rem;
+    }
+
+    .titre {
+        font-size: 18px;
+        left: 20px;
+        bottom: 20px;
+        z-index: 5;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+    header{
+        position: absolute;
+        top: 0;
+    }
+    .titre {
+        font-size: 16px;
+        left: 10px;
+        bottom: 10px;
+        z-index: 5;
+    }
+
+    .droite a {
+        font-size: 3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .droite {
+        padding: 10px;
+    }
 }
