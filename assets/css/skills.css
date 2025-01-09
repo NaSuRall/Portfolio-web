@@ -191,6 +191,10 @@ header a:hover{
 
 /* Mobiles */
 @media (max-width: 768px) {
+    .titre-haut{
+        margin: 0;
+        width: 100%;
+    }
     .groupe{
         flex-direction: column;
         width: 100%;
