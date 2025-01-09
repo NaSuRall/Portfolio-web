@@ -68,11 +68,15 @@ header a:hover{
     box-sizing: border-box;
     background-color: #000000;
 }
-
+.grid-container a{
+ font-size: 6em;
+    color: #ffffff;
+    font-family: "Major Mono Display", serif;
+    color: transparent;
+}
 .big-square {
     grid-column: span 2; 
     grid-row: span 2;    
-    background-color: #4caf50;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +87,6 @@ header a:hover{
 .square {
     grid-column: span 1; 
     grid-row: span 2;    
-    background-color: #4caf50;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,13 +96,13 @@ header a:hover{
 }
 .rectangle {
     grid-column: 3; 
-    background-color: #2196f3;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
     border-radius: 8px;
+    transition: 1s all ease-in-out;
 }
 
 .rectangle:nth-child(2) {
@@ -113,9 +116,35 @@ header a:hover{
     grid-row: 3; 
 }
 
-.bl{
+.bl {
     background-size: cover;
-    width: 100%;
-    height: 100%;
     background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-color 1s ease, background-image 1s ease;
+}
+
+/* Effet hover */
+.bl:hover {
+    background-image: none; 
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}
+
+.p1 {
+    background-image: url('../img/p1.png');
+}
+.timerjs {
+    background-image: url('../img/timerjs.png');
+}
+.devsphere {
+    background-image: url('../img/devsphere.png');
+}
+.retro {
+    background-image: url('../img/retro.png');
+}
+.akolite {
+    background-image: url('../img/akolite.png');
+}
+.portfolio {
+    background-image: url('../img/portfolio.png');
 }
